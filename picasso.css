@@ -1,0 +1,71 @@
+body {
+  background-color: skyblue;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-style: oblique;
+  color: rgba(106, 0, 255, 0.754);
+  z-index: 2;
+  /* position: absolute; */
+}
+.circles {
+  display: flex;
+  /* z-index: -1; */
+}
+.sun {
+  background-color: rgb(252, 219, 4);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.moon1 {
+  background-color: lightcoral;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.moon2 {
+  background-color: aquamarine;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  align-self: self-end;
+  z-index: 3;
+  position: absolute;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sun {
+    background-color: red;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .sun {
+    background-color: orange;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sun {
+    background: orangered;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .sun {
+    background-color: blueviolet;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .sun {
+    background-color: yellow;
+  }
+}
